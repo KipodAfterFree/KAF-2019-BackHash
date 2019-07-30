@@ -1,0 +1,111 @@
+/**
+ * Copyright (c) 2019 Nadav Tasher
+ * https://github.com/NadavTasher/WebAppBase/
+ **/
+
+html {
+    /* Overflow */
+    overflow-x: hidden;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    /* Alignment */
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    /* Positioning */
+    position: fixed;
+    /* Sides */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Sizing */
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* Sizing */
+    width: 100%;
+    max-width: 460px;
+    /* Background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    text-align: left !important;
+    text-align-last: left !important;
+}
+
+[text], a, p, [input], button, input, select, textarea, [row], [column], div, body {
+    /* WebKit */
+    -webkit-appearance: none;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    /* Text */
+    color: black;
+    font-size: large;
+    font-family: Arial, ArialHebrew, sans-serif;
+    /* Text Alignment */
+    text-align: center;
+    text-align-last: center;
+}
+
+[text], a, p {
+    flex-flow: wrap;
+    height: auto;
+}
+
+[text], a, p, [input], button, input, select, textarea {
+    /* Positioning */
+    margin: 1vh;
+    padding: 1vh;
+    /* Alignment */
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    /* Shaping */
+    border-radius: 1vh;
+    border-color: transparent;
+}
+
+[input], button, input, select, textarea {
+    transition-duration: 0.2s;
+    background-color: #ddddee;
+}
+
+[input]:hover, button:hover, input:hover, select:hover, textarea:hover {
+    background-color: #aaaabb;
+}
+
+[row], [column], div, body {
+    /* Alignment */
+    justify-content: center;
+    align-content: center;
+    /* Positioning */
+    margin: 0;
+    padding: 0;
+}
+
+[column] {
+    /* Flex */
+    flex-direction: column;
+    /* Alignment */
+    align-items: stretch;
+}
+
+[row] {
+    /* Flex */
+    flex-direction: row;
+    /* Alignment */
+    align-items: center;
+}

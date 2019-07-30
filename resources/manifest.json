@@ -1,0 +1,22 @@
+{
+  "name": "Back Hash",
+  "short_name": "Back Hash",
+  "description": "BackSHASH?>",
+  "start_url": "../index.html",
+  "background_color": "#4e4e4e",
+  "theme_color": "#4e4e4e",
+  "display": "standalone",
+  "orientation": "natural",
+  "icons": [
+    {
+      "src": "../images/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "../images/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
