@@ -2,7 +2,7 @@
 
 include_once __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "base" . DIRECTORY_SEPARATOR . "api.php";
 
-const FLAG = "NUFE{Dn4k_f1a9z___much_f1a9_l0t5_h4ppy}";
+const FLAG = "KAF{Dn4k_f1a9z___much_f1a9_l0t5_h4ppy}";
 
 api("backhash", function ($action, $parameters) {
     if ($action === "generate") {
