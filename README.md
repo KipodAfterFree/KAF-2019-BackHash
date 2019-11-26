@@ -19,12 +19,27 @@ function recursive(text = "", len = 3){
     if len == 0
         return;
     foreach char of charset{
-        if sha1(text+char).contains("f1a9"):
+        if hash(text+char).contains("f1a9"):
             print(text+char);
             return;
         else
             recursive(text+char, len - 1);
     }
+}
+```
+
+```php
+recursive("");
+
+function recursive($in, $length = 3){
+	if(strlen($in)<$length){
+		foreach (str_split("abcdefghijklmnopqrstuvwxyz0123456789", 1) as $c){
+			recursive($in . $c, $length);
+		}
+	}else{
+		$hash = md5($in);
+		echo $in . (strpos("f1a9", $hash) !== false) ? "\n" : "\r";
+	}
 }
 ```
 
